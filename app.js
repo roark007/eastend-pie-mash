@@ -45,7 +45,8 @@
       ] },
     { title: 'Hot Drinks', note: '',
       items: [
-        { name: 'Yorkshire Tea', price: '$3.00', tags: [], desc: 'Original, Gold or Decaf.' },
+        { name: 'Yorkshire Tea', price: '$3.50', tags: [], desc: 'Original, Gold or Decaf.' },
+        { name: 'Cadbury Bournville Hot Chocolate', price: '$3.50', tags: [], desc: '' },
       ] },
   ];
 
