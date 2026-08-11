@@ -58,9 +58,10 @@ button { font: inherit; }
 
 /* HERO */
 .hero { position: relative; min-height: 100svh; padding: calc(66px + clamp(28px, 7vw, 80px)) clamp(16px, 4vw, 44px) 0; overflow: hidden; display: flex; flex-direction: column; }
-.hero-bleed { position: absolute; top: 0; right: 0; width: clamp(280px, 40vw, 640px); height: 118%; z-index: 0; }
+.hero-bleed { position: absolute; top: 0; right: 0; width: clamp(280px, 40vw, 640px); height: 118%; z-index: 0; overflow: hidden; }
+.hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%; filter: saturate(1.05) contrast(1.02); }
 .stripes { position: absolute; inset: 0; background: repeating-linear-gradient(126deg, #1b1714 0 15px, #141110 15px 30px); }
-.fade-l { position: absolute; inset: 0; background: linear-gradient(90deg, var(--ink) 0%, rgba(13,12,11,0.35) 22%, rgba(13,12,11,0) 46%); }
+.fade-l { position: absolute; inset: 0; background: linear-gradient(90deg, var(--ink) 0%, rgba(13,12,11,0.55) 18%, rgba(13,12,11,0.05) 42%, rgba(13,12,11,0) 55%); }
 .imgcap { position: absolute; left: 20px; bottom: 120px; font-family: 'Spline Sans Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--tan); line-height: 1.7; }
 .hero-inner { position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; justify-content: center; max-width: 1180px; }
 .eyebrow { font-family: 'Spline Sans Mono', monospace; font-size: clamp(10px, 1.4vw, 13px); letter-spacing: 0.3em; color: var(--tan); margin: 0 0 clamp(18px, 3vw, 34px); animation: fade 1s both 0.05s; }
@@ -99,15 +100,16 @@ button { font: inherit; }
 /* GOODS */
 .goods { background: var(--ink); color: var(--cream); padding: clamp(70px, 11vw, 150px) clamp(16px, 4vw, 44px); position: relative; }
 .goods-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(12px, 1.6vw, 22px); align-items: start; }
-.g-big { grid-column: 1 / 8; margin: 0; position: relative; aspect-ratio: 4/5; }
-.g-big figcaption { position: absolute; left: 16px; bottom: 14px; font-family: 'Spline Sans Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: var(--tan); }
+.g-big { grid-column: 1 / 8; margin: 0; position: relative; aspect-ratio: 4/5; overflow: hidden; }
+.g-big img, .g-sq img, .g-wide img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.g-big figcaption { position: absolute; left: 16px; bottom: 14px; font-family: 'Spline Sans Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: var(--cream); text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
 .g-side { grid-column: 8 / 13; display: flex; flex-direction: column; gap: clamp(12px, 1.6vw, 22px); }
 .g-side h3 { margin: 0; font-family: 'Anton', sans-serif; font-weight: 400; text-transform: uppercase; line-height: 0.82; letter-spacing: -0.01em; font-size: clamp(2.6rem, 7vw, 6.4rem); }
-.g-sq { margin: 0; position: relative; aspect-ratio: 1/1; }
-.g-sq figcaption { position: absolute; left: 14px; bottom: 12px; font-family: 'Spline Sans Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: var(--tan); }
+.g-sq { margin: 0; position: relative; aspect-ratio: 1/1; overflow: hidden; }
+.g-sq figcaption { position: absolute; left: 14px; bottom: 12px; font-family: 'Spline Sans Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: var(--cream); text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
 .g-note { margin: 0; font-family: 'Newsreader', serif; font-style: italic; font-size: clamp(15px, 1.5vw, 18px); line-height: 1.5; color: var(--tan); }
-.g-wide { grid-column: 1 / 13; margin: clamp(6px, 1vw, 14px) 0 0; position: relative; aspect-ratio: 16/6; min-height: 180px; }
-.g-wide figcaption { position: absolute; left: 16px; bottom: 14px; font-family: 'Spline Sans Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: var(--tan); }
+.g-wide { grid-column: 1 / 13; margin: clamp(6px, 1vw, 14px) 0 0; position: relative; aspect-ratio: 16/6; min-height: 180px; overflow: hidden; }
+.g-wide figcaption { position: absolute; left: 16px; bottom: 14px; font-family: 'Spline Sans Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: var(--cream); text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
 .dark1 { background: repeating-linear-gradient(120deg, #221d18 0 16px, #171310 16px 32px); }
 .dark2 { background: repeating-linear-gradient(120deg, #201b16 0 16px, #161210 16px 32px); }
 .dark3 { background: repeating-linear-gradient(120deg, #1e1915 0 18px, #151109 18px 36px); }
