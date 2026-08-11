@@ -46,7 +46,7 @@ button { font: inherit; }
 .brand img { width: 40px; height: 40px; border-radius: 50%; display: block; }
 .brand-text { display: flex; flex-direction: column; line-height: 1; text-align: left; }
 .brand-title { font-family: 'Anton', sans-serif; font-size: 22px; letter-spacing: 0.02em; }
-.brand-sub { font-family: 'Spline Sans Mono', monospace; font-size: 9px; letter-spacing: 0.14em; color: var(--tan-dim); margin-top: 4px; }
+.brand-sub { font-family: 'Spline Sans Mono', monospace; font-size: 9px; letter-spacing: 0.14em; color: var(--tan-dim); margin-top: 4px; text-align: center; }
 .nav-links { display: flex; align-items: center; gap: clamp(16px, 3vw, 34px); font-family: 'Spline Sans Mono', monospace; font-size: 12px; letter-spacing: 0.18em; }
 .navbtn { background: none; border: none; padding: 0; cursor: pointer; color: var(--cream); }
 .navbtn:hover, .brand:hover { color: var(--red-hover); }
