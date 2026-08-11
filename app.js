@@ -10,11 +10,11 @@
     { title: 'Pie & Mash', note: '',
       items: [
         { name: 'Pie & Mash', price: '$12.50', tags: [], desc: 'Traditional London Pie & Mash. With parsley liquor or gravy. Beef or veg.' },
-        { name: 'Doner Kebab Pie', price: '', tags: [], desc: '' },
-        { name: 'Chicken Vindaloo', price: '', tags: [], desc: '' },
-        { name: 'Scotch Pie', price: '', tags: [], desc: '' },
-        { name: 'Cheese & Onion', price: '', tags: [], desc: '' },
-        { name: 'Spinach, Mushroom & Cheddar', price: '', tags: [], desc: '' },
+        { name: 'Doner Kebab Pie', price: '$12.50', tags: [], desc: '' },
+        { name: 'Chicken Vindaloo', price: '$12.50', tags: [], desc: '' },
+        { name: 'Scotch Pie', price: '$12.50', tags: [], desc: '' },
+        { name: 'Cheese & Onion', price: '$12.50', tags: [], desc: '' },
+        { name: 'Spinach, Mushroom & Cheddar', price: '$12.50', tags: [], desc: '' },
         { name: '2 Pies + 2 Mash', price: '$22.50', tags: [], desc: '' },
         { name: '2 Pies + 1 Mash', price: '$18.50', tags: [], desc: '' },
         { name: 'Solo Pie', price: '$8.95', tags: [], desc: '' },
@@ -40,8 +40,8 @@
       ] },
     { title: 'Afters', note: '',
       items: [
-        { name: 'Sticky Toffee Pudding', price: '$5.00', tags: [], desc: '' },
-        { name: 'Eccles Cakes', price: '$3.95', tags: [], desc: '' },
+        { name: 'Sticky Toffee Pudding', price: '$5.05', tags: [], desc: '' },
+        { name: 'Eccles Cakes', price: '$5.05', tags: [], desc: '' },
       ] },
     { title: 'Hot Drinks', note: '',
       items: [
